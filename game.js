@@ -239,7 +239,7 @@ var Snake = (function () {
   return {
     start: function (fps = 15) {
       window.onload = setup;
-      intervalID = setInterval(game.loop,1540 / fps);
+      intervalID = setInterval(game.loop,140 / fps);
     },
 
     loop: game.loop,
