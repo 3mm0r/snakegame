@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Snake Game</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="game-container">
+		<canvas id="gc" class="game-canvas" width="400" height="400"></canvas>
+	</div>
+	<div class="keys">
+	  <a class="up arr" onclick="Snake.action('up')">
+	    <i class="chevron up"></i></a>
+	  <br />
+	  <a class="left arr" onclick="Snake.action('left')">
+	    <i class="chevron left"></i></a>
+	  <a class="down arr" onclick="Snake.action('down')">
+	    <i class="chevron down"></i></a>
+	  <a class="right arr" onclick="Snake.action('right')">
+	    <i class="chevron right"></i></a>
+	</div>
+	<script type="text/javascript" src="game.js"></script>
+</body>
+</html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+                margin: 0;
+                 height: 100vh;
+            background-image: url('https://cdn.iganony.net/aHR0cHM6Ly9zY29udGVudC1vcmQ1LTIuY2RuaW5zdGFncmFtLmNvbS92L3Q1MS4yODg1LTE5LzQzNDE4MjgzOV8zOTYzNTk3NDMyNTU3MjdfMTU2MDIyMjkzNDg0MzA1MDQ5MV9uLmpwZz9zdHA9ZHN0LWpwZ19lMF9zMTUweDE1MF90dDYmX25jX2h0PXNjb250ZW50LW9yZDUtMi5jZG5pbnN0YWdyYW0uY29tJl9uY19jYXQ9MTExJl9uY19vYz1RNmNaMkFGLS1GQUV0dlZkaFhYaDMxYWdCdlJzYmNVTjRiVXFuSnk0X1U1eXU1MGM1bEl6WlhNZTlfXy1XRTlwaEtsUlJvQSZfbmNfb2hjPWtjWnFLaU1VRlBzUTdrTnZnRWhXeEF1Jl9uY19naWQ9NDYzODBhOGZjZTBjNGU4YmJkNjAxNThlOTQwNDhjMWMmZWRtPUFPNGtVOUVCQUFBQSZjY2I9Ny01Jm9oPTAwX0FZRmZBX2l3Y3JaWDFsOXR3WnJHZ0FtNWdtLTNINHlPTVhrampkRGhlN0xRaHcmb2U9NjdEOTUyQUMmX25jX3NpZD0xNjRjMWQ=');
+              background-size: cover;
+              background-position: center;
+            background-repeat: no-repeat;
+           margin: 7;
+               height: 100vh;
+               width: 100vw;
