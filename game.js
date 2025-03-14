@@ -184,7 +184,7 @@ var Snake = (function () {
         })());
       }
 
-      ctx.fillStyle = 'red';
+      ctx.fillStyle = 'blue';
       ctx.fillRect(fruit.x * gridSize+1, fruit.y * gridSize+1, gridSize-2, gridSize-2);
 
       if(stopped) {
@@ -239,7 +239,7 @@ var Snake = (function () {
   return {
     start: function (fps = 15) {
       window.onload = setup;
-      intervalID = setInterval(game.loop, 1111 / fps);
+      intervalID = setInterval(game.loop, 1541 / fps);
     },
 
     loop: game.loop,
