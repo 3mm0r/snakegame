@@ -24,96 +24,14 @@
       overflow: hidden;
     }
 
-     canvas {
-      background-color:url('https://i.supaimg.com/c12ddb8c-2fa5-493f-954f-b9484021b166.webp');
-      border: none;
-      display: block;
-    }
-
-    #game-container {
-      /* مفيش خلفية ولا ظل ولا حواف */
-      background: transparent;
-      padding: 0;
-      border-radius: 0;
-      box-shadow: none;
-    }
-
-    .keys {
-      margin-top: 20px;
-      display: grid;
-      grid-template-columns: 60px 60px 60px;
-      grid-template-rows: 60px 60px;
-      gap: 10px;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .arr {
-      background: url('https://i.supaimg.com/c12ddb8c-2fa5-493f-954f-b9484021b166.webp');
-      text-align: center;
-      line-height: 60px;
-      font-size: 24px;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-      user-select: none;
-      cursor: pointer;
-    }
-
-    .up { grid-column: 2 / 3; grid-row: 1 / 2; }
-    .left { grid-column: 1 / 2; grid-row: 2 / 3; }
-    .down { grid-column: 2 / 3; grid-row: 2 / 3; }
-    .right { grid-column: 3 / 4; grid-row: 2 / 3; }
-  </style>
-</head>
-<body>
-
-  <div id="game-container">
-    <canvas id="gc" class="game-canvas" width="400" height="400"></canvas>
-  </div>
-
-  <div class="keys">
-    <a class="up arr" onclick="Snake.action('up')">↑</a>
-    <a class="left arr" onclick="Snake.action('left')">←</a>
-    <a class="down arr" onclick="Snake.action('down')">↓</a>
-    <a class="right arr" onclick="Snake.action('right')">→</a>
-  </div>
-
-  <script src="game.js"></script>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Snake Game</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html, body {
-      height: 100%;
-      width: 100%;
-      background: url('https://i.supaimg.com/c12ddb8c-2fa5-493f-954f-b9484021b166.webp') no-repeat center center fixed;
+    canvas {
+      background: url('https://i.supaimg.com/c12ddb8c-2fa5-493f-954f-b9484021b166.webp') no-repeat center center;
       background-size: cover;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-family: sans-serif;
-      overflow: hidden;
-    }
-
-     canvas {
-      background-color:url('https://i.supaimg.com/c12ddb8c-2fa5-493f-954f-b9484021b166.webp');
       border: none;
       display: block;
     }
 
     #game-container {
-      /* مفيش خلفية ولا ظل ولا حواف */
       background: transparent;
       padding: 0;
       border-radius: 0;
